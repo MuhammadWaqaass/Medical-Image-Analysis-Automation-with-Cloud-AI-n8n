@@ -5,9 +5,6 @@ This project demonstrates how a **trained AI model for skin disease detection** 
 The goal is to make **early skin disease detection** accessible, fast, and usable from anywhere — without requiring powerful hardware or manual steps.
 
 ---
-<img width="952" height="445" alt="aaa" src="https://github.com/user-attachments/assets/1b9b3a80-3a99-41ab-b0d4-5d5b22561b69" />
----
-<img width="959" height="442" alt="cccvcv" src="https://github.com/user-attachments/assets/797f092c-5e09-4c12-a063-7d294afe90da" />
 
 
 ## 🔍 Project Overview
@@ -26,6 +23,8 @@ Everything runs in the cloud and can be connected to automation tools like **n8n
 - The model learns to recognize different skin conditions
 - Focus on **early detection** to support faster diagnosis
 
+<img width="518" height="347" alt="mmm" src="https://github.com/user-attachments/assets/62ec787c-7af8-47e3-9de0-e645316dd0d4" />
+
 ---
 
 ## 🌐 Step 2: Convert Model into a Web API
@@ -43,6 +42,8 @@ Everything runs in the cloud and can be connected to automation tools like **n8n
 
 - The entire application is packaged into a container
 - Deployed on **Google Cloud Run**
+
+<img width="952" height="445" alt="aaa" src="https://github.com/user-attachments/assets/1b9b3a80-3a99-41ab-b0d4-5d5b22561b69" />
 
 ### Benefits:
 - No powerful machine needed
@@ -71,6 +72,8 @@ This makes testing and real-world usage simple and fast.
   - Can store, notify, or trigger next actions
 
 No manual coding required after setup.
+
+<img width="959" height="442" alt="cccvcv" src="https://github.com/user-attachments/assets/797f092c-5e09-4c12-a063-7d294afe90da" />
 
 ---
 
