@@ -1,0 +1,79 @@
+{
+  "name": "keras g cloud api",
+  "nodes": [
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://keras-api-987762757318.us-central1.run.app/predict",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "file",
+              "inputDataFieldName": "data0"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        256,
+        0
+      ],
+      "id": "4558978e-bbb6-43b7-a85f-7039972c4e24",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "options": {
+          "allowFileUploads": true
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        32,
+        0
+      ],
+      "id": "29637497-f12f-478d-8dcd-83ca070a5500",
+      "name": "When chat message received",
+      "webhookId": "989b56e0-7891-4ea0-8e32-37a3eeac2709"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "9f5d2e34-2280-427e-bb88-cc3085be7a85",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "7c0fb59a1a80e73fdf930435bf7da596c15a51ca2714a975b4817596fe5cb4e5"
+  },
+  "id": "G1RLeCnKU_UefAS9hudTv",
+  "tags": []
+}
